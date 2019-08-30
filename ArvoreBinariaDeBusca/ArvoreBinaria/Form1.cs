@@ -49,5 +49,20 @@ namespace ArvoreBinaria
             RichTxtBxArvore.Clear();
             RichTxtBxArvore.AppendText(arvore.listagemPosOrdem());
         }
+
+        private void BtRemover_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                arvore.deleta(int.Parse(TxtBxValor.Text));
+                RichTxtBxArvore.AppendText("Deletado: " + TxtBxValor.Text + " \n");
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Valor Invalido! Digite apenas números");
+            }
+            TxtBxValor.Clear();
+            TxtBxValor.Focus();
+        }
     }
 }

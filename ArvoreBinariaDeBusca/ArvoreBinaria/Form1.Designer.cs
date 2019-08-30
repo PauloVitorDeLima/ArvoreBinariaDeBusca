@@ -34,6 +34,7 @@
             this.RichTxtBxArvore = new System.Windows.Forms.RichTextBox();
             this.BtListarPreOrdem = new System.Windows.Forms.Button();
             this.BtListarPosOrdem = new System.Windows.Forms.Button();
+            this.BtRemover = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // BtAdicionar
@@ -91,11 +92,22 @@
             this.BtListarPosOrdem.UseVisualStyleBackColor = true;
             this.BtListarPosOrdem.Click += new System.EventHandler(this.BtListarPosOrdem_Click);
             // 
+            // BtRemover
+            // 
+            this.BtRemover.Location = new System.Drawing.Point(171, 36);
+            this.BtRemover.Name = "BtRemover";
+            this.BtRemover.Size = new System.Drawing.Size(78, 23);
+            this.BtRemover.TabIndex = 7;
+            this.BtRemover.Text = "Remover";
+            this.BtRemover.UseVisualStyleBackColor = true;
+            this.BtRemover.Click += new System.EventHandler(this.BtRemover_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(648, 318);
+            this.Controls.Add(this.BtRemover);
             this.Controls.Add(this.BtListarPosOrdem);
             this.Controls.Add(this.BtListarPreOrdem);
             this.Controls.Add(this.RichTxtBxArvore);
@@ -116,6 +128,7 @@
         private System.Windows.Forms.RichTextBox RichTxtBxArvore;
         private System.Windows.Forms.Button BtListarPreOrdem;
         private System.Windows.Forms.Button BtListarPosOrdem;
+        private System.Windows.Forms.Button BtRemover;
     }
 }
 
